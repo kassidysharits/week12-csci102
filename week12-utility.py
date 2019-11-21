@@ -32,3 +32,9 @@ def FindWordCount(lists,word):
             count += 1
     return count
 
+def ScoreFinder(players, scores, name):
+    for x in range(len(players)):
+        if players[x] == name:
+            return (players[x] + ' got a score of ' + str(scores[x]))
+    return "player not found"
+
