@@ -49,4 +49,7 @@ def Union(list1, list2):
             lenlist -= 1
             x -= 1
         x +=1
+    return list1
+
+
 
