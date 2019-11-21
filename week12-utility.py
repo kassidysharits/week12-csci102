@@ -38,3 +38,15 @@ def ScoreFinder(players, scores, name):
             return (players[x] + ' got a score of ' + str(scores[x]))
     return "player not found"
 
+def Union(list1, list2):
+    for x in range(len(list2)):
+        list1.append(list2[x])
+    lenlist = len(list1)
+    x = 0
+    while(lenlist != x+1):
+        if list1.count(list1[x]) > 1:
+            list1.pop(x)
+            lenlist -= 1
+            x -= 1
+        x +=1
+
