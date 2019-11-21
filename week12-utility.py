@@ -51,5 +51,13 @@ def Union(list1, list2):
         x +=1
     return list1
 
+def Intersection(list1, list2):
+    list3 = []
+    for x in range(len(list1)):
+        for y in range(len(list2)):
+            if list1[x] == list2[y]:
+                list3.append(list1[x])
+    return list3
+
 
 
